@@ -43,7 +43,7 @@ body {
 }
 
 .main .custom-jumbotron {
-  background-image: url(/img/hero-introduction.jpg);
+  background-image: url(img/hero-introduction.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -55,28 +55,22 @@ body {
 }
 
 /* NOTE: Style jumbotron text overlay */
-  /* NOTE:   background-position: center center; not working here */
 div.transbox {
-  margin-top: 30px;
-  margin-right: 360px;
-  margin-bottom: 30px;
-  margin-left: 360px;
-  background-color: #ffffff;
-  /* background-position: center center; */
-  /* border: 1px solid black; */
+  margin: 10%; /* makes margin flexible and responsive to portable devices */
+  background-color: #fff;
   opacity: 0.75;
 }
-
 
 /* NOTE:
       Method 1: Place a div around the card image with a fixed height and use overflow to mask the image height over 150px
       Method 2: Edit the images to have the same height and width. Use https://www.photopea.com/ or photo editor software to edit the image's dimensions
     */
 #mywork .image-overflow {
-  /* position: center; */
-  align-content: center;
+  /* align-content: center;
   height: 150px;
-  overflow: hidden;
+  overflow: hidden; */
+  width: 100%;
+   height: 300px;
 }
 
 #mywork .card-body {
@@ -90,10 +84,9 @@ div.transbox {
 }
 
 .blockquote {
-  /* width: 100%; NOT WORKING */
   margin: 0;
-  text-align: center;
-  padding: 60px;
+  /* text-align: center;
+  padding: 60px; */
   color: var(--textColor);
   background-color: #5F949C;
 }
@@ -104,16 +97,36 @@ div.transbox {
     color: var(--textColor);
 }
 
-.container {
+/* .container {
   text-align: center;
   padding: 60px;
   color: var(--textColor);
   background-color: #A591BC;
+} */
+.whois {
+    text-align: center;
+    color: var(--textColor);
+    background-color: #A591BC;
 }
 
-.custom-social {
+.letsconnect {
+    background-color: #A591BC;
+    color: white;
+}
+
+/* .custom-social {
   font-size: 180%;
   text-align: center;
+} */
+.custom-social {
+    font-size: 2em;
+    text-align: center;
+}
+
+.copy {
+    text-align: center;
+    background-color: #123332;
+    color: white;
 }
 
 #myBtn {
